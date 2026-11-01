@@ -2,7 +2,7 @@
 
 Target: **2 minutes 40 seconds**, within the event's 1–3 minute demo requirement. Record the functioning app, with your voice. Start with the problem, why it matters, how it is solved and the result. Keep the mouse still while speaking.
 
-App: [SceneRack private review](https://scenerack.abhinav-0905.chatgpt.site). Source: [Abhinav0905/scenerack](https://github.com/Abhinav0905/scenerack).
+App: [SceneRack](https://scenerack.abhinav-0905.chatgpt.site). Source: [Abhinav0905/scenerack](https://github.com/Abhinav0905/scenerack).
 
 ## Before recording
 

@@ -1062,7 +1062,8 @@ export default function Studio() {
                                 checked={consent}
                                 onChange={(e) => setConsent(e.target.checked)}
                               />
-                              Send these photos to YouCam for this preview.
+                              Send these photos to YouCam for this preview. I
+                              have permission for this processing.
                             </label>
                             <button
                               className="button dark small"
@@ -1608,6 +1609,7 @@ export default function Studio() {
         <a href="/evidence">
           Evidence & limitations <ArrowUpRight size={13} />
         </a>
+        <a href="/privacy">Photos & privacy</a>
       </footer>
       <dialog
         ref={modal}
@@ -1695,9 +1697,9 @@ export default function Studio() {
                       checked={uploadPermission}
                       onChange={(e) => setUploadPermission(e.target.checked)}
                     />
-                    I have permission to use this image
+                    I have permission to upload and use this image
                     {editor.kind === "actor"
-                      ? " and the performer is an adult"
+                      ? " and the adult performer consents to YouCam processing"
                       : ""}
                     .
                   </label>
@@ -1717,6 +1719,17 @@ export default function Studio() {
                     JPG, PNG or WebP · up to 15 MB. Converted to JPEG without
                     photo metadata. Stored privately in this workspace.
                   </small>
+                  <p>
+                    Photos are stored on Cloudflare. Generating a preview sends
+                    the selected photos to YouCam, whose API terms generally
+                    specify 30-day retention. SceneRack has no automatic
+                    deletion schedule; resetting the sample does not erase
+                    photos.{" "}
+                    <a href="/privacy" target="_blank" rel="noreferrer">
+                      Read the photo and privacy notice
+                    </a>{" "}
+                    before uploading.
+                  </p>
                 </div>
               </>
             )

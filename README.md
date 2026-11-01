@@ -6,9 +6,9 @@ SceneRack puts the sourcing decision next to the visual decision. Preview a garm
 
 In the fictional sample, approving an owned brown jacket changes the acquisition cost from **$65 to $0**. Reject that look and the rental returns. These are modeled sample costs, not measured customer savings.
 
-[Open the private review app](https://scenerack.abhinav-0905.chatgpt.site) · [Public source](https://github.com/Abhinav0905/scenerack) · [CI checks](https://github.com/Abhinav0905/scenerack/actions)
+[Open SceneRack](https://scenerack.abhinav-0905.chatgpt.site) · [Public source](https://github.com/Abhinav0905/scenerack) · [CI checks](https://github.com/Abhinav0905/scenerack/actions)
 
-The hosted app currently requires the owner's ChatGPT sign-in. Judge access must be enabled and checked before submission. The recorded examples and planning flow also run locally without a YouCam key.
+The hosted app is available without an account. The recorded examples and planning flow also run locally without a YouCam key. Read the [photo and privacy notice](https://scenerack.abhinav-0905.chatgpt.site/privacy) before uploading real photos.
 
 ## Try the sample
 
@@ -68,7 +68,7 @@ flowchart LR
 
 `lib/planner.ts` enumerates the bounded candidate combinations, prunes higher-cost branches and minimizes acquisition cost in integer cents. Preference breaks cost ties. Availability, recorded wearer eligibility, required scenes and explicit approvals are hard conditions. A physical garment cannot go to two performers in overlapping scenes, even if a handoff is permitted. Without handoff permission it stays with one performer for the production.
 
-The API lives in `app/api`. Production state and preview jobs are stored in D1. Uploads and fresh results are stored in R2 and checked against the requesting workspace. On Sites, identity comes from the trusted platform auth headers; anonymous local sessions use an HttpOnly cookie. Do not expose the Worker directly behind a proxy that accepts client-supplied `oai-authenticated-user-id` headers as trusted identity.
+The API lives in `app/api`. Production state and preview jobs are stored in D1. Uploads and fresh results are stored in R2 and checked against the requesting workspace. On Sites, signed-in identity comes from the trusted platform auth headers; anonymous sessions use an HttpOnly cookie. Do not expose the Worker directly behind a proxy that accepts client-supplied `oai-authenticated-user-id` headers as trusted identity.
 
 YouCam integration: register two JPEG files, send their bytes to signed upload URLs, create `/s2s/v2.0/task/cloth-v4`, poll `data.task_status`, read `data.results.url`, then save the actual image. Bearer authorization is sent only to the YouCam API, never to signed upload/download destinations. [Verified contract and official references](docs/youcam-contract.md).
 
@@ -83,3 +83,7 @@ Generation checks the current task price (maximum two units) and balance. Admiss
 - [Source asset provenance](docs/assets.md)
 
 A generated appearance is not a fitting. Measurements, mobility, condition, exact trim, lighting and changeover timing still need human checks. The next validation should be a task session with a costume lead using real wardrobe stock. The current evidence supports a working prototype, not a proven business.
+
+## License
+
+SceneRack's original code and documentation use the [MIT license](LICENSE). Dependencies, generated sample media and service outputs keep their applicable terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
