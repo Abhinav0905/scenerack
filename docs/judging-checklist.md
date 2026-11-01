@@ -19,7 +19,7 @@ The official four criteria are equally weighted. This checklist maps the working
 - [x] Source and test instructions prepared.
 - [x] Devpost narrative drafted with problem, approach, implementation and result.
 - [x] A 2:40 recording script and exact click sequence prepared.
-- [ ] Verify the final repository is public, per the October 30 organizer announcement.
+- [x] Verify the repository is public, per the October 30 organizer announcement: [Abhinav0905/scenerack](https://github.com/Abhinav0905/scenerack). Its first CI run passed all checks and the build.
 - [ ] Verify the final app is accessible to judges. A private owner preview does not satisfy this by itself.
 - [ ] Record and publish the 1–3 minute demo video, with no viewing password.
 - [ ] Add the final screenshots, public repository, app and video links to Devpost.

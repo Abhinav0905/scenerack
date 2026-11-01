@@ -61,4 +61,8 @@ Reset the sample. Note the $65 acquisition cost. Open Review alternative, approv
 
 ## Links to finish before submission
 
-Use the verified deployed app and public repository URLs from the handoff. Add the final 1–3 minute public/unlisted demo URL after recording. Confirm judge access to the app; an owner-only deployment is not an accessible public demo. No Devpost submission is implied by this draft.
+App: https://scenerack.abhinav-0905.chatgpt.site (currently owner-private).
+
+Public source: https://github.com/Abhinav0905/scenerack.
+
+Add the final 1–3 minute public/unlisted demo URL after recording. Confirm judge access to the app; an owner-only deployment is not an accessible public demo. No Devpost submission is implied by this draft.
