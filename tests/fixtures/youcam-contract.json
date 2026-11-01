@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "kind": "synthetic-documentation-derived",
+    "checked_on": "2026-10-31",
+    "note": "Not live API results. Identifiers and URLs are intentionally unusable. Do not send these requests to YouCam."
+  },
+  "register_file_request": {
+    "files": [{ "content_type": "image/jpeg", "file_name": "actor.jpg", "file_size": 12345 }]
+  },
+  "register_file_success": {
+    "status": 200,
+    "data": {
+      "files": [{
+        "content_type": "image/jpeg",
+        "file_name": "actor.jpg",
+        "file_id": "fixture-actor-file",
+        "requests": [{
+          "method": "PUT",
+          "url": "https://example.invalid/presigned-upload",
+          "headers": { "Content-Type": "image/jpeg", "Content-Length": 12345 }
+        }]
+      }]
+    }
+  },
+  "create_request_ids": {
+    "src_file_id": "fixture-actor-file",
+    "ref_file_id": "fixture-jacket-file",
+    "garment_category": "outer",
+    "filter_multi_person": "strict",
+    "change_shoes": false
+  },
+  "create_request_urls": {
+    "src_file_url": "https://example.invalid/actor.jpg",
+    "ref_file_url": "https://example.invalid/jacket.jpg",
+    "garment_category": "outer",
+    "filter_multi_person": "strict",
+    "change_shoes": false
+  },
+  "create_success": { "status": 200, "data": { "task_id": "fixture-task-001" } },
+  "poll_running": { "status": 200, "data": { "task_status": "running", "error": null } },
+  "poll_success": {
+    "status": 200,
+    "data": {
+      "task_status": "success",
+      "error": null,
+      "results": { "url": "https://example.invalid/result.jpg" }
+    }
+  },
+  "poll_engine_error": {
+    "status": 200,
+    "data": { "task_status": "error", "error": "error_pose", "error_message": "Pose could not be detected." }
+  },
+  "poll_unknown_engine_error": {
+    "status": 200,
+    "data": { "task_status": "error", "error": "fixture_future_error", "error_message": "Unknown future engine code." }
+  },
+  "malformed_success_missing_url": { "status": 200, "data": { "task_status": "success", "results": {} } },
+  "insufficient_credit": { "status": 400, "error": "The operation could not be completed", "error_code": "CreditInsufficiency" },
+  "invalid_key": { "status": 401, "error": "Invalid API key" },
+  "rate_limit": { "status": 429, "error": "Too many requests" },
+  "feature_cost_page": {
+    "status": 200,
+    "result": {
+      "next_token": null,
+      "skus": [{
+        "description": "Synthetic Clothes V4 SKU",
+        "amount": 2,
+        "unit": "result_image",
+        "proc_unit": 1,
+        "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/cloth-v4"
+      }]
+    }
+  },
+  "balance": {
+    "status": 200,
+    "results": [
+      { "id": 1, "type": "ApiPaygToken", "amount": 1000, "amount_dec": 1000.25, "expiry": 2000000000000 },
+      { "id": 2, "type": "ApiSubsToken", "amount": 20, "amount_dec": 20.5, "expiry": 1000000000000 }
+    ]
+  },
+  "delete_success": { "status": 200 },
+  "delete_unfinished": { "status": 400, "error": "Task has not finished.", "error_code": "OperationInvalid" }
+}

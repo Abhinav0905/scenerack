@@ -1,0 +1,7 @@
+{
+  "result": "pass",
+  "test": "Obsolete source jobs settle without being exposed as current previews",
+  "provider_task": "Reused existing completed task; no generation charge",
+  "status_after_list_refresh": "success",
+  "stale_preview_visible": false
+}

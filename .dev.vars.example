@@ -1,0 +1,4 @@
+# Server only. Never commit your real key.
+YOUCAM_API_KEY=""
+YOUCAM_LIVE_ENABLED="false"
+YOUCAM_MAX_UNITS="192"
