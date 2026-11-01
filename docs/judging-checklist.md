@@ -23,8 +23,9 @@ The official four criteria are equally weighted. This checklist maps the working
 - [x] Public access enabled and anonymous page, workspace API and recorded image requests verified.
 - [x] Original source code and documentation licensed under MIT, with separate media and dependency notices.
 - [x] Project narrative, cover and five actual app screenshots saved on Devpost. This is a published portfolio project, not a completed competition entry.
-- [ ] Record and publish the 1–3 minute demo video, with no viewing password.
-- [ ] Add the final video link to Devpost and complete the event's custom questions.
+- [x] Publish the [146-second working-app demo](https://youtu.be/SG_D5dO7N3s) as unlisted, with AI narration, burned-in English captions and an English subtitle track. YouTube checks reported no issues.
+- [x] Save the final video link on the [Devpost project](https://devpost.com/software/scenerack).
+- [ ] Complete the event's custom questions. Technical answers are drafted; the entrant must provide residence and eligibility declarations.
 - [ ] Complete the submission and verify Devpost's submitted state. Nothing has been submitted by this build.
 - [ ] Keep the judging experience available through November 20. Saved real sample results remain available if live units expire or generation is paused.
 

@@ -6,7 +6,7 @@ SceneRack puts the sourcing decision next to the visual decision. Preview a garm
 
 In the fictional sample, approving an owned brown jacket changes the acquisition cost from **$65 to $0**. Reject that look and the rental returns. These are modeled sample costs, not measured customer savings.
 
-[Open SceneRack](https://scenerack.abhinav-0905.chatgpt.site) · [Public source](https://github.com/Abhinav0905/scenerack) · [CI checks](https://github.com/Abhinav0905/scenerack/actions)
+[Open SceneRack](https://scenerack.abhinav-0905.chatgpt.site) · [Watch the captioned demo](https://youtu.be/SG_D5dO7N3s) · [Devpost project](https://devpost.com/software/scenerack) · [CI checks](https://github.com/Abhinav0905/scenerack/actions)
 
 The hosted app is available without an account. The recorded examples and planning flow also run locally without a YouCam key. Read the [photo and privacy notice](https://scenerack.abhinav-0905.chatgpt.site/privacy) before uploading real photos.
 

@@ -4,6 +4,8 @@ Target: **2 minutes 40 seconds**, within the event's 1–3 minute demo requireme
 
 App: [SceneRack](https://scenerack.abhinav-0905.chatgpt.site). Source: [Abhinav0905/scenerack](https://github.com/Abhinav0905/scenerack).
 
+A completed [AI-narrated demo with English captions](https://youtu.be/SG_D5dO7N3s) is available. The optional manual recording plan below follows the same problem, method and result sequence.
+
 ## Before recording
 
 - Open the deployed SceneRack app. Sign in before recording if this instance is private. The judge-facing link must be accessible before submission; an owner-only preview is not public access.
